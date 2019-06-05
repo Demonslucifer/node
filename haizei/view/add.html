@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 800px;
+            height: 500px;
+        }
+
+        td {
+            border: 1px solid #ccc;
+        } -->
+    </style>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <div class="page-header container">
+            <br>
+            <h1>海贼王
+                <small>角色添加</small>
+            </h1>
+        </div>
+    </header>
+    <div class="container hero-list">
+        <br>
+        <br>
+        <br>
+        <form action="/add" method="post" enctype="multipart/form-data">
+            <table class="table table-hover">
+                <tr>
+                    <td>姓名</td>
+                    <td>
+                        <input name="name" type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>能力</td>
+                    <td>
+                        <input name="nengli" type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>团体</td>
+                    <td>
+                        <input name="jituan" type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>上传图片</td>
+                    <td>
+                        <input type="file" name="img">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="添加" class="btn btn-success pull-right">
+                        <a class="btn btn-success pull-right" href="/">返回</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
